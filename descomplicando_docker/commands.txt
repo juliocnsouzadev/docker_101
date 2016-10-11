@@ -1,0 +1,36 @@
+docker run imageName #run a image, if it's not found locally docker look for it in docker repository and download
+
+docker run -ti imageName #allows you to interact
+
+docker run -d imageName #runs in background
+
+docker images #shows images
+
+docker ps #shows active containers
+
+docker ps -a #shows all container inclued the stoped ones
+
+# c+p+q leaves container and let is running
+# c+d leaves container and stops it
+
+docker attach containerID # get in a running container
+
+docker create imageName # create a container, but does not run it
+
+docker stop containerID #stops the contaienr
+
+docker start containerID #starts the container
+
+docker pause contaienrID #pauses the container
+
+docker unpause containerID
+
+docker stats containerID #info about container usage of the hardware
+
+docker top containerID #info about running processes in the container
+
+docker logs containerID #logs of the container
+
+docker rm containerID #removes a stoped container
+
+docker rm -f containerID #removes a running container
