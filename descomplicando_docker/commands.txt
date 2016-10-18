@@ -34,3 +34,15 @@ docker logs containerID #logs of the container
 docker rm containerID #removes a stoped container
 
 docker rm -f containerID #removes a running container
+
+docker inspect containerID #all info about the container
+
+docker run -ti --memory 512m #runs a container with 512mb of memory
+
+docker update containerID -m 256m containerID #updates the memory to 256mb
+
+docker run -ti --cpu-shares 1024 --name container1 debian #runs a container setting a cpu usage limit
+
+docker inspect containerID | grep -i cpu #shows cpu usage info
+
+docker update --cpu-shares 512 containerID #update cpu usage
