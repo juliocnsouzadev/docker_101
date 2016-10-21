@@ -46,3 +46,7 @@ docker run -ti --cpu-shares 1024 --name container1 debian #runs a container sett
 docker inspect containerID | grep -i cpu #shows cpu usage info
 
 docker update --cpu-shares 512 containerID #update cpu usage
+
+## DOCKERFILE ##
+
+docker build -t image_name:1.0 . #executes dockerfile
